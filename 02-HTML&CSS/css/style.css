@@ -1,0 +1,110 @@
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 10px;
+}
+
+ul li a {
+    font-size: large;
+}
+
+.nav-bar a {
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    background-color: rgb(15, 25, 20, 0.1);
+    border-radius: 0.5em;
+}
+
+.profile a {
+    text-decoration: none;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+}
+
+.profile a .number {
+    color: rgb(15, 20, 25);
+    font-style: bold;
+}
+
+.profile a .text {
+    color: rgb(83, 100, 113);
+    font-style: bold;
+}
+
+.nameUser1 {
+    color:  rgb(15, 20, 25);
+}
+
+.nameUser2 {
+    color: rgb(83, 100, 113);
+}
+
+.profile-description {
+    color: rgb(15, 20, 25)
+}
+
+.profile-date-localization {
+    color: rgb(83, 100, 113);
+}
+
+.tweet:hover {
+    background-color: rgb(15, 25, 20, 0.1);
+}
+
+.publications ul li {
+    display: inline-block;
+}
+
+.publications ul li a {
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+}
+
+.publications ul li a:hover {
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 0.5em;
+}
+
+.tweet-actions {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(83, 100, 113);
+    border-radius: 1em;
+}
+
+.tweet-actions a {
+    text-decoration: none;
+}
+
+.tweet-actions a:hover {
+    text-decoration: underline;
+}
+
+
+.tweet-actions #RS:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+    color: rgba(29, 155, 240, 1);
+}
+
+.tweet-actions #Ret:hover {
+    background-color: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+}
+
+.tweet-actions #Like:hover  {
+    background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+}
+
+
+
+
