@@ -28,6 +28,12 @@ ul li a {
     text-decoration: underline;
 }
 
+.profile-img img {
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
 .profile a .number {
     color: rgb(15, 20, 25);
     font-style: bold;
@@ -50,7 +56,7 @@ ul li a {
     color: rgb(15, 20, 25)
 }
 
-.profile-date-localization {
+.profile-date-localization a {
     color: rgb(83, 100, 113);
 }
 
@@ -69,7 +75,6 @@ ul li a {
 
 .publications ul li a:hover {
     background-color: rgba(15, 25, 20, 0.1);
-    border-radius: 0.5em;
 }
 
 .tweet-actions {
@@ -77,12 +82,12 @@ ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(83, 100, 113);
     border-radius: 1em;
 }
 
 .tweet-actions a {
     text-decoration: none;
+    color: rgb(83, 100, 113);
 }
 
 .tweet-actions a:hover {
