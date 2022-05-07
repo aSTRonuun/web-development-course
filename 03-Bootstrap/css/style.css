@@ -15,6 +15,14 @@ button {
     height: 35px;
 }
 
+.container {
+    
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    margin-top: 5px;
+}
+
 .nav-bar a {
     color: rgb(15, 20, 25);
     text-decoration: none;
@@ -34,15 +42,20 @@ button {
     text-decoration: underline;
 }
 
+.profile-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 .profile-img img {
     width: 100px;
     height: 100px;
-    display: inline;
 }
 
 .profile a .number {
     color: rgb(15, 20, 25);
-    font-style: bold;
+    font-weight: bold;
 }
 
 .profile a .text {
@@ -62,7 +75,14 @@ button {
     color: rgb(15, 20, 25)
 }
 
-.profile-date-localization a {
+.profile-date-localization-follow-folling ul{
+    display: flex;
+    align-items: baseline;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-date-localization-follow-folling a {
     color: rgb(83, 100, 113);
 }
 
@@ -70,49 +90,64 @@ button {
     background-color: rgb(15, 25, 20, 0.1);
 }
 
-.publications ul li {
-    display: inline-block;
+.publications {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
-.publications ul li a {
-    color: rgb(15, 20, 25);
+.publications a {
+    color: rgb(83, 100, 113);
+    font-weight: bold;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.publications ul li a:hover {
+.publications a:hover {
     background-color: rgba(15, 25, 20, 0.1);
 }
 
 .tweet-actions {
-    max-width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 1em;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .tweet-actions a {
     text-decoration: none;
     color: rgb(83, 100, 113);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tweet-actions a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
 .tweet-actions #RS:hover {
-    background-color: rgba(29, 155, 240, 0.1);
     color: rgba(29, 155, 240, 1);
 }
 
 .tweet-actions #Ret:hover {
-    background-color: rgba(0, 186, 124, 0.1);
     color: rgba(0, 186, 124, 1);
 }
 
 .tweet-actions #Like:hover  {
-    background-color: rgba(249, 24, 128, 0.1);
     color: rgba(249, 24, 128, 1);
 }
 
