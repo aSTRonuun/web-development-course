@@ -42,6 +42,7 @@ button {
     font-size: large;
     display: flex;
     justify-content: flex-start;
+    width: 100%;
 }
 
 #navigation ul li a span{
@@ -114,7 +115,7 @@ button {
 }
 
 #btn-small-tweet {
-    width: 50%;
+    width: 100%;
     min-width: 50px;
     height: 35px;
     border-radius: 0.5em;
@@ -214,7 +215,7 @@ button {
 }
 
 .recomendations {
-    background-color: rgb(239, 243, 244);
+    background-color: rgb(233 236 239);
     border-radius: 0.5em;
     margin-top: 10px;
 }
