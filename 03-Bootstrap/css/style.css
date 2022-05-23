@@ -100,14 +100,6 @@ button {
     font-style: bold;
 }
 
-.nameUser1 {
-    color:  rgb(15, 20, 25);
-}
-
-.nameUser2 {
-    color: rgb(83, 100, 113);
-}
-
 .profile-description {
     color: rgb(15, 20, 25)
 }
@@ -145,6 +137,14 @@ button {
     width: 64px;
     height: 64px;
     border-radius: 50%;
+}
+
+.tweet-info span {
+    color: rgb(83, 100, 113);
+}
+
+.tweet-info .nameUser1 {
+    color:  rgb(15, 20, 25);
 }
 
 .tweet:hover {
