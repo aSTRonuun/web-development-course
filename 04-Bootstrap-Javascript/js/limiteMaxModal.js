@@ -1,4 +1,4 @@
-function countCaracteres1() {
+function limiteMax() {
 
     const countElement = document.querySelector('.countM');
     const textArea = document.getElementById('tweet-text-m');
@@ -9,7 +9,7 @@ function countCaracteres1() {
         const maxChar = 140;
         const lenght = textArea.value.length;
         if (lenght > 0 && lenght < 100) {
-            countElement.innerHTML = '<span>' + (maxChar - lenght)  + '</span>';
+            countElement.innerHTML = '<span>' + (maxChar - lenght) + '</span>';
             button.disabled = false;
         }else if(lenght >= 100 && lenght <= 140) {
             countElement.innerHTML = '<span class="alerrt">' + (maxChar - lenght)  + '</span>';
@@ -24,4 +24,4 @@ function countCaracteres1() {
     
 }
 
-countCaracteres1();
+limiteMax();
