@@ -1,0 +1,21 @@
+
+.form-launch-trip {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+}
+
+.form-launch-trip div {
+    margin-bottom: 10px;
+}
+
+.form-launch-trip button{
+    width: 100%;
+}
+
+.form-launch-trip button:hover{
+    background-color: rgb(38, 53, 255);
+}
+
