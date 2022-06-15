@@ -8,6 +8,7 @@ function limiteMax() {
         
         const maxChar = 140;
         const lenght = textArea.value.length;
+        console.log(lenght)
         if (lenght > 0 && lenght < 100) {
             countElement.innerHTML = '<span>' + (maxChar - lenght) + '</span>';
             button.disabled = false;
