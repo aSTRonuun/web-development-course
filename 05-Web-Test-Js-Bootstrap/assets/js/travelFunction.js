@@ -14,11 +14,13 @@ function handleTravelUpdate(totalTravel, totalTravelValue) {
 
 function travelFunction() {
 
+    let btn = document.getElementById("btn-send");
     let balanceMax = 20000;
     let currentBalance = balanceMax;
     let totalTravels = 0;
     let totalTravelsValue = 0;
     handleBalance(currentBalance);
+
 
     document.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -42,6 +44,10 @@ function travelFunction() {
             }
         } else {
             alert("Opção inválida");
+        }
+
+        if(currentBalance == 0) {
+            btn.disabled = true;
         }
     })
 }

@@ -12,42 +12,89 @@
     <title>Só Viagens</title>
 </head>
 <body>
+
+    <div class="title">
+        <h1>Só Viagens</h1>
+    </div>
     
     <div class="container">
-        <div class="form-launch-trip">
-            <form >
-                <div>
-                    <label for="input-means-of-transport" class="form-label">Meio de transporte</label>
-                    <select class="form-select" aria-label="Meio de transporte" id="transport">
-                        <option selected>Selecicione seu meio de transporte</option>
-                        <option value="1">Avião</option>
-                        <option value="2">Ônibus</option>
-                    </select>
-                </div>
 
-                <div>
-                    <label for="input-modality" class="form-label">Modalidade</label>
-                    <select class="form-select" aria-label="Modalidade da viagem" id="modality">
-                        <option selected>Selecicione a modalidade da viagem</option>
-                        <option value="1">Internacional</option>
-                        <option value="2">Nacional</option>
-                        <option value="3">Interestadual</option>
-                        <option value="4">Intermunicipal</option>
-                        <option value="5">Municipal</option>
-                    </select>
-                </div>
+        <div class="info-travel">
+            <div class="form-launch-trip">
+                <form >
+                    <div>
+                        <label for="input-means-of-transport" class="form-label">Meio de transporte</label>
+                        <select class="form-select" aria-label="Meio de transporte" id="transport">
+                            <option selected>Selecicione seu meio de transporte</option>
+                            <option value="1">Avião</option>
+                            <option value="2">Ônibus</option>
+                        </select>
+                    </div>
+    
+                    <div>
+                        <label for="input-modality" class="form-label">Modalidade</label>
+                        <select class="form-select" aria-label="Modalidade da viagem" id="modality">
+                            <option selected>Selecicione a modalidade da viagem</option>
+                            <option value="1">Internacional</option>
+                            <option value="2">Nacional</option>
+                            <option value="3">Interestadual</option>
+                            <option value="4">Intermunicipal</option>
+                            <option value="5">Municipal</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Ida e Volta
+                        </label>
+                        <input class="form-check-input" type="checkbox" value="" id="roundTrip">
+                    </div>
+    
+                    <div>
+                        <button class="btn btn-primary" type="submit" id="btn-send"><i class="bi bi-send"></i> Enviar</button>
+                    </div>
+                </form>
+            </div>
 
-                <div class="form-check">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Ida e Volta
-                    </label>
-                    <input class="form-check-input" type="checkbox" value="" id="roundTrip">
-                </div>
-
-                <div>
-                    <button class="btn btn-primary" type="submit"><i class="bi bi-send"></i> Enviar</button>
-                </div>
-            </form>
+            <div class="informations">
+                <h4>Informações e custos</h4>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Meio de transport</th>
+                            <th>Tipo</th>
+                            <th>Custo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Avião</td>
+                            <td>Internacional</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>Avião</td>
+                            <td>Nacional</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td>Ônibus</td>
+                            <td>Interestadual</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Ônibus</td>
+                            <td>Intermunicipal</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Ônibus</td>
+                            <td>Municipal</td>
+                            <td>25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div class="show-balance">
