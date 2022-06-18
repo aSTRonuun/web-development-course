@@ -18,8 +18,8 @@
         <div id="win-modal" class="modal fade in" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <img src="./assets/tiziu.png" alt="logo-tiziu">
+                    <div class="modal-header justify-content-center">
+                        <img  src="./assets/tiziu.png" alt="logo-tiziu">
                     </div>
                     <div class="modal-body">
                         <h4>Entre no tzeet agora mesmo!</h4>
@@ -40,9 +40,9 @@
                                             Informe a senha
                                         </div>
                                       </div>
-                                      <a href="">Esqueceu a senha?</a>
+                                      <a href="" class="mt-2">Esqueceu a senha?</a>
     
-                                      <button type="submit" class="btn btn-primary" id="btn-send-login" disabled>Entrar</button>
+                                      <button type="submit" class="btn btn-primary m-2" id="btn-send-login" disabled>Entrar</button>
                                       
                                       <p>Não tem uma conta? <a href="./signup.html">Inscreva-se</a></p>
                                     </div>
@@ -53,12 +53,6 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="btn btn-primary" id="btn-small-tweet" data-bs-toggle="modal" data-bs-target="#win-modal">
-            <span class="d-none d-sm-block d-lg-block">Tweet</span>
-            <span class="d-block d-sm-none">
-                <i class="bi bi-chat"></i>
-            </span>
-        </button>
     </div>
 
 
@@ -82,6 +76,13 @@
             }, false)
         })
         })()
+    </script>
+
+    <script>
+        const myModal = new bootstrap.Modal('#win-modal', {
+            keyboard: false
+        })
+        myModal.show()
     </script>
 
     <script src="./js/verifyBtnLogin.js">
