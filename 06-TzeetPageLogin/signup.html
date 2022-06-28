@@ -21,14 +21,16 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4>Criar Conta</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <a href="./index.html">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </a>
                     </div>
                     <div class="modal-body">
                         <div class="form-public">
                             <form class="needs-validation" novalidate>
                                 <div class="d-flex flex-column">
                                     <div class="form-floating mb-3">
-                                        <input type="name" class="form-control" id="floatingName" placeholder="name@example.com" required> 
+                                        <input type="name" class="form-control is-invalid" id="floatingName" placeholder="name@example.com" required> 
                                         <label for="floatingInput">Nome</label>
                                         <div class="invalid-feedback">
                                             Digite seu nome
@@ -45,14 +47,14 @@
                                         <input type="password" class="form-control" id="password" placeholder="Password" required>
                                         <label for="floatingPassword">Senha</label>
                                         <div class="invalid-feedback">
-                                            Digite uma senha
+                                            A senha é obrigatória e precisa ter pelo menos 6 caracteres
                                         </div>
                                     </div>
                                     <div class="form-floating mb-3">
                                         <input type="password" class="form-control" id="passwordConfirm" placeholder="Password" required>
                                         <label for="floatingPassword">Confirmação da senha</label>
                                         <div class="invalid-feedback">
-                                            Confirme sua senha
+                                            A senha é obrigatória e precisa ter pelo menos 6 caracteres
                                         </div>
                                     </div>
                                     <div class="input-date">
@@ -114,7 +116,7 @@
                                                 <label class="form-check-label" for="flexRadioDefault2">
                                                   Não
                                                 </label>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <hr>

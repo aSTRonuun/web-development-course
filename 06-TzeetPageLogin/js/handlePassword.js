@@ -5,7 +5,19 @@ function handlePassword() {
 
     password.addEventListener('keyup', function() {
         if (password.value.length < 6) {
-            console.log(password.value)
+            password.classList.add("is-invalid");
+        } else {
+            password.classList.remove("is-invalid");
+        }
+    })
+
+    passwordConfirm.addEventListener('keyup', function() {
+        if (passwordConfirm.value.length < 6 && password.value === passwordConfirm.value) {
+            password.classList.add("is-invalid");
+            passwordConfirm.classList.add("is-invalid");
+        } else {
+            password.classList.remove("is-invalid");
+            passwordConfirm.classList.remove("is-invalid");
         }
     })
 }

@@ -1,7 +1,7 @@
 function verifyBtnSignin() {
 
-    var btnSignin = document.getElementById("btn-signin-send");
-    var check = document.getElementById("flexRadioDefault2");
+    let btnSignin = document.getElementById("btn-signin-send");
+    let check = document.getElementById("flexRadioDefault2");
 
     document.addEventListener("change", function() {
         if (check.checked) {
